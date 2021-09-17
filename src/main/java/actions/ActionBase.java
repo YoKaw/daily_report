@@ -59,6 +59,7 @@ public abstract class ActionBase {
         Method commandMethod;
 
         try {
+
             //パラメータからcommandを取得
             String command = request.getParameter(ForwardConst.CMD.getValue());
 
@@ -238,15 +239,5 @@ public abstract class ActionBase {
     protected <R> R getContextScope(PropertyConst key) {
         return (R) context.getAttribute(key.getValue());
     }
-
-
-
-
-
-
-
-
-
-
 
 }
