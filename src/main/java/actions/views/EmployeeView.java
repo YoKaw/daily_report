@@ -31,7 +31,7 @@ public class EmployeeView {
     /**
      * 氏名
      */
-    private String namel;
+    private String name;
 
     /**
      *パスワード
@@ -41,7 +41,7 @@ public class EmployeeView {
     /**
      *管理者権限があるかどうか(一般：0、管理者：1)
      */
-    private Integer asminFlag;
+    private Integer adminFlag;
 
     /**
      * 登録日時

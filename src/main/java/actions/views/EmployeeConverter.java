@@ -23,11 +23,11 @@ public class EmployeeConverter {
         return new Employee(
                 ev.getId(),
                 ev.getCode(),
-                ev.getNamel(),
+                ev.getName(),
                 ev.getPassword(),
-                ev.getAsminFlag() == null
+                ev.getAdminFlag() == null
                             ? null
-                            : ev.getAsminFlag() == AttributeConst.ROLE_ADOMIN.getIntegerValue()
+                            : ev.getAdminFlag() == AttributeConst.ROLE_ADMIN.getIntegerValue()
                                     ? JpaConst.ROLE_ADMIN
                                     : JpaConst.ROLE_GENERAL,
                 ev.getCreatedAt(),
@@ -58,7 +58,7 @@ public class EmployeeConverter {
                 e.getAdminFlag() == null
                         ? null
                         : e.getAdminFlag() == JpaConst.ROLE_ADMIN
-                                ? AttributeConst.ROLE_ADOMIN.getIntegerValue()
+                                ? AttributeConst.ROLE_ADMIN.getIntegerValue()
                                 : AttributeConst.ROLE_GENERAL.getIntegerValue(),
                 e.getCreatedAt(),
                 e.getUpdatedAt(),
@@ -92,9 +92,9 @@ public class EmployeeConverter {
     public static void copyViewToModel(Employee e, EmployeeView ev) {
         e.setId(ev.getId());
         e.setCode(ev.getCode());
-        e.setName(ev.getNamel());
+        e.setName(ev.getName());
         e.setPassword(ev.getPassword());
-        e.setAdminFlag(ev.getAsminFlag());
+        e.setAdminFlag(ev.getAdminFlag());
         e.setCreatedAt(ev.getCreatedAt());
         e.setUpdatedAt(ev.getUpdatedAt());
         e.setDeleteFlag(ev.getDeleteFlag());

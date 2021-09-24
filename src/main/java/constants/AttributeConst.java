@@ -29,11 +29,12 @@ public enum AttributeConst {
     EMP_COUNT("employees_count"),
     EMP_ID("id"),
     EMP_CODE("code"),
+    EMP_PASS("password"),
     EMP_NAME("name"),
     EMP_ADMIN_FLG("admin_flag"),
 
     //管理者フラグ
-    ROLE_ADOMIN(1),
+    ROLE_ADMIN(1),
     ROLE_GENERAL(0),
 
     //削除フラグ
