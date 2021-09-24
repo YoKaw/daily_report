@@ -27,7 +27,7 @@
             <input type="hidden" name="${AttributeConst.TOKEN.getValue()}" value="${_token}" />
         </form>
         <script>
-        fuction confirmDestroy() {
+        function confirmDestroy() {
             if (confirm("本当に削除してもよろしいですか？")) {
                 document.forms[1].submit()
             }
