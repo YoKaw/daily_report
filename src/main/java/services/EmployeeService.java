@@ -153,8 +153,8 @@ public class EmployeeService extends ServiceBase{
                     EncryptUtil.getPasswordEncrypt(ev.getPassword(),pepper));
         }
 
-        savedEmp.setNamel(ev.getNamel()); //変更後の氏名を設定する
-        savedEmp.setAsminFlag(ev.getAsminFlag()); //変更後の管理者フラグを設定する
+        savedEmp.setName(ev.getName()); //変更後の氏名を設定する
+        savedEmp.setAdminFlag(ev.getAdminFlag()); //変更後の管理者フラグを設定する
 
         //更新日時に現在時刻を設定する
         LocalDateTime today = LocalDateTime.now();

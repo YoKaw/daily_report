@@ -35,7 +35,7 @@ public class EmployeeValidator {
         }
 
         //氏名のチェック
-        String nameError = validateName(ev.getNamel());
+        String nameError = validateName(ev.getName());
         if(!nameError.equals("")) {
             errors.add(nameError);
         }
