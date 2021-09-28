@@ -54,7 +54,7 @@ public class ReportConverter {
      *@param List DTOモデルのリスト
      *@return Viewモデルのリスト
      */
-    public static List<ReportView> toViList(List<Report> list) {
+    public static List<ReportView> toViewList(List<Report> list) {
         List<ReportView> evs = new ArrayList<>();
 
         for (Report r : list) {
