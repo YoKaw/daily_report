@@ -148,7 +148,7 @@ public class ReportService extends ServiceBase {
 
         em.getTransaction().begin();
         Report r = findOneInternal(rv.getId());
-        ReportConverter.copyModelToView(r, rv);
+        ReportConverter.copyViewToModel(r, rv);
         em.getTransaction().commit();
     }
 
